@@ -22,7 +22,16 @@ const power = function (base, exponent) {
   return result;
 };
 
-const factorial = function () {};
+const factorial = function (number) {
+  if (number === 0) {
+    return 1;
+  }
+  let result = number;
+  for (let i = number - 1; i > 0; i--) {
+    result *= i;
+  }
+  return result;
+};
 
 // Do not edit below this line
 module.exports = {
